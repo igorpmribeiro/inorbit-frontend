@@ -13,7 +13,7 @@ import { Controller, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { createAGoal } from '../../http/create-a-goal'
-import { QueryClient, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useQueryClient } from '@tanstack/react-query'
 
 const createGoalForm = z.object({
   title: z.string().min(1, 'Informe um titulo para sua meta'),
